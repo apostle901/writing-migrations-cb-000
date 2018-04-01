@@ -1,7 +1,7 @@
 class CreateStudents < ActiveRecord::Migration[5.1]
   def up
     sql = <<-SQL
-      CREATE TABLE IF NOT EXISTS students (
+      CREATE TABLE IF NOT EXISTS artists (
       id INTEGER PRIMARY KEY
       )
     SQL
@@ -13,7 +13,7 @@ class CreateStudents < ActiveRecord::Migration[5.1]
   end
 
   def change
-    create_table :students do |t|
+    create_table :artists do |t|
       t.string :name
     end
   end
